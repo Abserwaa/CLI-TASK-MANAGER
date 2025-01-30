@@ -1,0 +1,12 @@
+# Ignore build artifacts
+target/
+
+# Ignore IDE settings
+.vscode/
+.idea/
+
+# Ignore OS-specific files
+.DS_Store
+
+# Maven output logs
+maven-status/
