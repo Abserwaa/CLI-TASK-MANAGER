@@ -122,7 +122,7 @@ public class TaskCLI {
 
         for (Task task : tasks) {
             if (filter.isEmpty() || task.getStatus().equalsIgnoreCase(filter)) {
-                System.out.println(task.getId() + ". " + task.getDescription() + " [" + task.getStatus() + "]");
+                System.out.println(task);
             }
         }
     }
