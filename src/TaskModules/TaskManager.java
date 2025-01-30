@@ -26,4 +26,3 @@ public class TaskManager {
         return tasks.stream().filter(task -> task.getId() == id).findFirst().orElse(null);
     }
 }
-

@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "CLI-TASK-MANAGER/src",
+        "src"
+    ]
+}
