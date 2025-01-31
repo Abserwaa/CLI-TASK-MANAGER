@@ -4,7 +4,8 @@
 
 A simple and efficient command-line application for tracking tasks. This tool allows users to create, update, delete, and manage tasks directly from the terminal.
 
-🚀  ## Features
+## 🚀 Features
+
 -Add new tasks with descriptions
 
 -Update task descriptions
@@ -15,10 +16,15 @@ A simple and efficient command-line application for tracking tasks. This tool al
 
 -List tasks with optional status filters
 
-🛠️ ## Installation
-Clone this repository:
+## 🛠️ Installation
+
+1. Clone this repository:
+
+```bash
 git clone <https://github.com/your-username/cli-task-tracker.git>
 cd cli-task-tracker
+
+```
 
 Compile the project using Maven:
 mvn clean compile  
