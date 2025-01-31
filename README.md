@@ -1,6 +1,4 @@
-# Project Title
-
-## ✅ CLI Task Tracker
+# ✅ CLI Task Tracker
 
 A simple and efficient command-line application for tracking tasks. This tool allows users to create, update, delete, and manage tasks directly from the terminal.
 
@@ -43,13 +41,12 @@ A simple and efficient command-line application for tracking tasks. This tool al
 | mark-in-progress `<id>`| Marks a task as "in-progress" |
 | mark-done `<id>`   | Marks a task as "done" |
 |list                | Lists all tasks|
-|list `<filter>`     | Lists tasks by status("todo","done")|
+|list `<filter>`     | Lists tasks by status("todo","done") |
 |exit                | Exits the application|
 
 ## 📚 Example Session  
 
 ```bash
-
 > add Write weekly report  
 Task added successfully (ID: 1)  
 
