@@ -1,59 +1,73 @@
 # Project Title
 
-✅CLI Task Tracker
+## ✅ CLI Task Tracker
 
 A simple and efficient command-line application for tracking tasks. This tool allows users to create, update, delete, and manage tasks directly from the terminal.
 
-## 🚀 Features
+## 🚀 Features  
 
--Add new tasks with descriptions
+- Add new tasks with descriptions  
+- Update task descriptions  
+- Delete tasks by ID  
+- Mark tasks as "in-progress" or "done"  
+- List tasks with optional status filters  
 
--Update task descriptions
+## 🛠️ Installation  
 
--Delete tasks by ID
+1. Clone this repository:  
 
--Mark tasks as "in-progress" or "done"
+    ```bash
+    git clone <https://github.com/your-username/cli-task-tracker.git>  
+    cd cli-task-tracker
+    ```
 
--List tasks with optional status filters
+2. Compile the project using Maven:
+  
+    ```bash
+    mvn clean compile
+    ```
 
-## 🛠️ Installation
+3. Run the application:  
 
-1. Clone this repository:
+    ```bash
+    mvn exec:java -Dexec.mainClass="TaskModules.TaskCLI"
+    ```
+
+## 🏷️ Usage
+
+| **Command**        | **Description** |
+|--------------------|-----------------|
+| add `<description>`| Adds a new task |
+| update`<id> <desc>`| Updates the description of a task by ID               |
+|  delete `<id>`     | Deletes a task by ID|
+| mark-in-progress `<id>`| Marks a task as "in-progress" |
+| mark-done `<id>`   | Marks a task as "done" |
+|list                | Lists all tasks|
+|list `<filter>`     | Lists tasks by status("todo","done")|
+|exit                | Exits the application|
+
+## 📚 Example Session  
 
 ```bash
-git clone <https://github.com/your-username/cli-task-tracker.git>
-cd cli-task-tracker
 
-```
-
-Compile the project using Maven:
-mvn clean compile  
-
-Run the application:
-mvn exec:java -Dexec.mainClass="TaskModules.TaskCLI"  
-
-📚 Example Session
-
-&gt; add Write weekly report  
+> add Write weekly report  
 Task added successfully (ID: 1)  
 
-&gt;list  
-
+> list  
 1. Write weekly report [todo]  
 
-&gt; mark-in-progress 1  
+> mark-in-progress 1  
 Task marked as in-progress.  
 
-&gt;list  
-
+> list  
 1. Write weekly report [in-progress]  
 
-&gt; mark-done 1  
+> mark-done 1  
 Task marked as done.  
 
-&gt; list done  
-
+> list done  
 1. Write weekly report [done]  
 
-&gt; exit  
-Goodbye!  
+> exit  
+Goodbye!
+
